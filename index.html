@@ -59,7 +59,7 @@
                 <p class="whitepo">TND TBD</p>
             </div>
             <div class="col-4">
-                <img src="images/product-2.png" />
+                <img src="images/xrosmini/1.jpg" id="xrosmini" />
                 <h4 class="whitepo">Xros mini</h4>
                 <div class="rating"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
                         aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
@@ -311,6 +311,14 @@
             }
             document.getElementById("deadrabbitatomiser").addEventListener("mouseover", deadrabbitatomiserPic);
             setInterval(deadrabbitatomiserPic, 5000);
+
+            function xrosMiniPic(){
+                let xrosminipics = ["images/xrosmini/1.jpg", "images/xrosmini/2.jpg", "images/xrosmini/3.jpg", "images/xrosmini/4.jpg", "images/xrosmini/5.jpg", "images/xrosmini/6.jpg"]
+                let randomImage = xrosminipics[Math.floor(Math.random() * xrosminipics.length)];
+                document.getElementById("xrosmini").src = randomImage;
+            }
+            document.getElementById("xrosmini").addEventListener("mouseover", xrosMiniPic);
+            setInterval(xrosMiniPic, 5000);
         </script>
 
 </body>
